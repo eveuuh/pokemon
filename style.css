@@ -86,3 +86,7 @@ img {
       font-weight: bold;
       justify-content: center;
   }
+
+  #battle {
+    color: #eee;
+  }
