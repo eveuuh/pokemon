@@ -13,7 +13,7 @@ let output= "";
  
 console.clear();
 output += '///////////////////////////////////// <br>' ;
-output += ' C\'est l\'heure du dueeeeeeeeel !';
+output += ' C\'est l\'heure du dueeeeeeeeel "<br>"!';
 output += `/////////////////////////////////////`;
 output += '';
 
@@ -70,7 +70,7 @@ if (player2Life < 20){
 //affiche le resultat du programme// 
 
 output +="/////////////////////////////////////";
-output +="Le Combat est terminé!";
+output +="Le Combat est terminé!" ;
 
 if (player1Life > 0 && player2Life  <= 0  ) {
     output +=`${player1} est le vainqueur! et ${player2} est perdant`;
