@@ -12,9 +12,9 @@ let player2Life = 100;
 let output= "";
  
 console.clear();
-output += '///////////////////////////////////// <br>' ;
-output += ' C\'est l\'heure du dueeeeeeeeel "<br>"!';
-output += `/////////////////////////////////////`;
+output += '<br>' ;
+output += ' <h1> C\'est l\'heure du dueeeeeeeeel !<br> </h1>';
+output += '<br>';
 output += '';
 
 // programme defini par une boucle avec des conditions //
@@ -62,24 +62,27 @@ if (player1Life < 20) {
 if (player2Life < 20){
     let potion2 = player2Life + 30+ Math.floor(Math.random() * 60 );
     player2Life = potion2;
-    output +=`${player2} a bu une potion et gagné ${potion2}PV vous avez : ${player2Life} points `;
+    console.log(`${player2} a bu une potion et gagné ${potion2}PV vous avez : ${player2Life} points `);
 
 }
 }
 
 //affiche le resultat du programme// 
 
-output +="/////////////////////////////////////";
-output +="Le Combat est terminé!" ;
+output +="<br>";
+output +=" <h1> Le Combat est terminé! </h1>" ;
+output += "<br>";
+
+output += "<br>";
 
 if (player1Life > 0 && player2Life  <= 0  ) {
-    output +=`${player1} est le vainqueur! et ${player2} est perdant`;
+    output +=`  <h1>  ${player1} est le vainqueur! et ${player2} est perdant</h1>`;
 
 } else if(player1Life <= 0 && player2Life > 0 )  {
-    output +=`${player1} désolé Pikachu, perdu :(  ${player2} a gagné, la team rocket a encore gagné`;
+    output +=` <h1>  ${player1} désolé Pikachu, perdu :(  ${player2} a gagné, la team rocket a encore gagné</h1>`;
 
 } else {
-    output +=`${player1} et l'${player2} êtes à  egalités, quel combat !!`;    
+    output +=` <h1> ${player1} et l'${player2} êtes à  egalités, quel combat !!</h1>`;    
 
 }  
 
